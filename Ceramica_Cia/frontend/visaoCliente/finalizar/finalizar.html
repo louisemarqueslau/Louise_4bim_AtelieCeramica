@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar compra | Cerâmica &amp; Cia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/visaoCliente/finalizar/finalizar.css">
+</head>
+<body>
+  <header class="topo-checkout"><a href="/loja" class="marca-checkout">Cerâmica &amp; Cia</a><span>Finalizar compra</span><a href="/minha-conta" class="conta-checkout">♡ Minha conta</a></header>
+  <main class="checkout">
+    <section class="secao-checkout"><p class="etapa">01 · SEU PEDIDO</p><h1>Confira seu pedido</h1>
+      <div class="tabela-responsiva"><table id="lista-finalizar"><thead><tr><th>Código</th><th>Produto</th><th>Preço</th><th>Quantidade</th><th>Subtotal</th></tr></thead><tbody id="listaFinalizar"></tbody></table></div>
+    </section>
+    <section class="secao-checkout valores"><p class="etapa">02 · RESUMO</p><h2>Resumo do pagamento</h2>
+      <p><span>Produtos</span><strong id="valor-produtos">R$ 0,00</strong></p>
+      <p class="total-final"><span>Total do pedido</span><strong id="total-final">R$ 0,00</strong></p>
+      <small>O valor corresponde somente aos produtos. Não há cobrança de frete nesta compra.</small>
+    </section>
+    <div class="container-botoes"><button type="button" class="btn-voltar" onclick="window.location.href='/carrinho'">← Voltar ao carrinho</button><button id="btn-finalizar" type="button">Continuar para pagamento →</button></div>
+  </main>
+  <footer>✿ Cerâmica &amp; Cia · Peças feitas com carinho</footer>
+  <script src="/visaoCliente/finalizar/finalizar.js"></script>
+  <script src="/visaoCliente/cookies.js" defer></script>
+</body></html>

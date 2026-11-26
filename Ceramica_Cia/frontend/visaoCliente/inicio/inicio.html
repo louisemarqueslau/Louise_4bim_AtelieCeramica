@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peças artesanais da Cerâmica & Cia.">
+  <title>Cerâmica &amp; Cia | Loja</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/visaoCliente/inicio/inicio.css">
+</head>
+<body>
+  <div class="faixa-promocional">
+    ✿ Peças artesanais feitas com carinho · Encontre algo especial para sua casa ✿
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="/loja">
+      <span class="marca-icone">✿</span>
+      <span>ATELIÊ <b>CERÂMICA &amp; ARTE</b></span>
+    </a>
+
+    <button class="botao-menu" id="botaoMenu" type="button"
+            aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+      <a class="ativo" href="/loja">Início</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre o ateliê</a>
+    </nav>
+
+    <div class="atalhos">
+      <div class="conta-wrapper" id="contaWrapper">
+        <a class="botao-conta" id="botaoConta" href="/entrar" aria-label="Entrar ou acessar minha conta">
+          ♡ <span id="textoConta">Login</span>
+        </a>
+      </div>
+      <a class="botao-carrinho" href="/carrinho" aria-label="Abrir carrinho">
+        🛒 <span>Carrinho</span> <b id="contadorCarrinho">0</b>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" aria-label="Propagandas e novidades">
+      <div class="banner-slides" aria-hidden="true">
+        <div class="banner-slide ativo" style="background-image: url('/visaoCliente/inicio/imagens/banner-ceramica.png')"></div>
+        <div class="banner-slide" style="background-image: url('/visaoCliente/inicio/imagens/banner-colecao.jpg')"></div>
+        <div class="banner-slide" style="background-image: url('/visaoCliente/inicio/imagens/banner-atelier.jpg')"></div>
+      </div>
+      <div class="banner-sombra"></div>
+
+      <div class="banner-conteudo">
+        <p class="banner-sobretitulo">CERÂMICA &amp; CIA · FEITO À MÃO</p>
+        <h1>Beleza que mora<br><em>nos detalhes.</em></h1>
+        <p class="banner-descricao">
+          Peças artesanais para deixar sua casa ainda mais acolhedora.
+        </p>
+        <a class="botao-principal" href="#produtos">
+          ENCONTRE SUA PEÇA <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <button class="banner-seta banner-anterior" type="button" aria-label="Imagem anterior">‹</button>
+      <button class="banner-seta banner-proximo" type="button" aria-label="Próxima imagem">›</button>
+
+      <div class="banner-indicadores" aria-label="Selecionar imagem">
+        <button class="indicador ativo" type="button" aria-label="Mostrar imagem 1"></button>
+        <button class="indicador" type="button" aria-label="Mostrar imagem 2"></button>
+        <button class="indicador" type="button" aria-label="Mostrar imagem 3"></button>
+      </div>
+    </section>
+
+    <section class="atalhos-categorias" id="categorias" aria-label="Categorias">
+      <a href="#produtos" data-categoria="Canecas"><span>☕</span>Canecas</a>
+      <a href="#produtos" data-categoria="Decoração"><span>✿</span>Decoração</a>
+      <a href="#produtos" data-categoria="Vasos"><span>♧</span>Vasos</a>
+      <a href="#produtos" data-categoria="Pratos"><span>◉</span>Pratos</a>
+      <a href="#produtos" data-categoria=""><span>♡</span>Todas as peças</a>
+    </section>
+
+    <section class="introducao" id="produtos">
+      <p class="sobretitulo">FEITAS COM TEMPO E CUIDADO</p>
+      <h2>Descubra a beleza do artesanal</h2>
+      <p>Explore nossas peças e encontre aquela que combina com a sua casa.</p>
+    </section>
+
+    <section class="vitrine" aria-label="Vitrine de produtos">
+      <div class="vitrine-filtros">
+        <label class="busca-produtos">
+          <span aria-hidden="true">⌕</span>
+          <input id="buscaProdutos" type="search" placeholder="Buscar uma peça..." aria-label="Buscar produtos">
+        </label>
+        <span id="contadorProdutos" class="contador-produtos"></span>
+      </div>
+
+      <div id="listaProdutos" class="grade-produtos">
+        <p class="estado-produtos">Carregando nossas peças...</p>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Um toque artesanal em cada momento</h2>
+      <p>
+        Cada peça carrega a beleza do feito à mão. Escolha suas favoritas
+        e leve um toque de afeto para a sua casa.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ATELIÊ CERÂMICA &amp; ARTE</strong> · Peças feitas com carinho.</p>
+    <p>Desenvolvido por Louise Marques Lau</p>
+  </footer>
+
+  <div id="modalProduto" class="modal" aria-hidden="true">
+    <div class="modal-conteudo" role="dialog" aria-modal="true" aria-labelledby="modalNome">
+      <button id="fecharModal" class="fechar-modal" type="button" aria-label="Fechar">×</button>
+      <img id="modalImagem" src="" alt="">
+      <div class="modal-detalhes">
+        <p class="sobretitulo">PEÇA ARTESANAL</p>
+        <h2 id="modalNome"></h2>
+        <p id="modalDescricao">Uma peça especial para sua casa.</p>
+        <strong id="modalPreco"></strong>
+        <p id="modalEstoque"></p>
+        <label for="modalQuantidade">Quantidade</label>
+        <input id="modalQuantidade" type="number" min="1" value="1">
+        <button id="modalAdicionar" class="botao-principal" type="button">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/visaoCliente/inicio/inicio.js" defer></script>
+  <script src="/visaoCliente/cookies.js" defer></script>
+  <script src="/visaoCliente/cookies.js" defer></script>
+</body>
+</html>

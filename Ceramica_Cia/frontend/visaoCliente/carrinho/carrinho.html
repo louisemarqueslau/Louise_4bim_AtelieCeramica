@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Ateliê Cerâmica &amp; Arte</title>
+    <link rel="stylesheet" href="/visaoCliente/carrinho/carrinho.css">
+</head>
+
+<body>
+
+    <header class="topo-carrinho">
+        <a href="/loja" class="marca-carrinho">Ateliê Cerâmica &amp; Arte</a>
+        <a href="/minha-conta" class="conta-carrinho">♡ Minha conta</a>
+    </header>
+
+    <div class="container">
+        <h1>🛒</h1>
+
+        <table id="tabela-carrinho">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Quantidade (un.)</th>
+                    <th>Preço unitário</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela"></tbody>
+        </table>
+
+        <div class="total" id="total-geral">Total: R$ 0,00</div>
+
+        <div class="acoes">
+            <button id="btn-limpar" class="btn btn-limpar">🧹 Limpar Carrinho</button>
+            <a href="/loja" class="btn">← Continuar Comprando</a>
+            <button id="btn-finalizar" class="btn">Finalizar Pedido</button>
+        </div>
+
+    </div>
+
+    <script src="/visaoCliente/carrinho/carrinho.js"></script>
+  <script src="/visaoCliente/cookies.js" defer></script>
+</body>
+
+</html>

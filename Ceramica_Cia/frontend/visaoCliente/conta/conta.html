@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minha conta | Cerâmica & Cia</title><link rel="stylesheet" href="/visaoCliente/conta/conta.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"></head>
+<body><header><a href="/loja" class="voltar">← Voltar à loja</a><h1>Minha conta</h1><p>Bem-vinda(o) ao seu espaço</p></header>
+<main>
+<section class="painel" id="inicioConta"><h2 id="saudacao">Olá!</h2><p>O que você deseja fazer?</p>
+<div class="acoes-conta"><button id="abrirDados">Alterar dados</button><a id="adminLink" href="/administrador" hidden>Ir para administração</a><button id="sair" class="secundario" type="button">Sair da conta</button></div></section>
+<section class="painel" id="painelDados" hidden><button class="voltar-painel" id="voltarConta" type="button">← Voltar</button><h2>Meus dados</h2>
+<form id="dadosForm"><label>Nome completo<input id="nome" required></label><label>E-mail<input id="email" type="email" required></label><label>Endereço<input id="endereco"></label><label>Data de nascimento<input id="nascimento" type="date"></label><button type="submit">Salvar alterações</button><p id="msgDados" role="status"></p></form>
+<hr><h2>Segurança da conta</h2><p>Para proteger sua conta, a senha é armazenada de forma criptografada e nunca é exibida.</p>
+<form id="senhaForm"><label>Senha atual<input id="senhaAtual" type="password" required autocomplete="current-password"></label><label>Nova senha<input id="novaSenha" type="password" minlength="5" required autocomplete="new-password"></label><label>Confirmar nova senha<input id="confirmaSenha" type="password" minlength="5" required autocomplete="new-password"></label><button type="submit">Alterar senha</button><p id="msgSenha" role="status"></p></form></section>
+</main><script src="/visaoCliente/conta/conta.js" defer></script>  <script src="/visaoCliente/cookies.js" defer></script>
+</body></html>

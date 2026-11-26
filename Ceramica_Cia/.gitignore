@@ -1,0 +1,19 @@
+# Dependências do Node.js
+node_modules/
+**/node_modules/
+
+# Variáveis de ambiente e credenciais
+.env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Arquivos do macOS e editores
+.DS_Store
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*

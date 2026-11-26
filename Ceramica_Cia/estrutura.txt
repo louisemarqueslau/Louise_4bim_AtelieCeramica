@@ -1,0 +1,37 @@
+Ceramica_Cia/
+├── backend/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── routes/
+│   ├── services/
+│   ├── database.js
+│   ├── server.js
+│   └── .env.example
+│
+├── frontend/
+│   ├── administrador/
+│   │   ├── produtos/
+│   │   ├── categorias/
+│   │   ├── pessoas/
+│   │   ├── cargos/
+│   │   ├── pedidos/
+│   │   └── menu/
+│   │
+│   ├── visaoCliente/
+│   │   ├── inicio/
+│   │   ├── carrinho/
+│   │   ├── finalizar/
+│   │   └── pagamento/
+│   │
+│   ├── login/
+│   ├── imagens/
+│   └── testes/
+│
+├── documentacao/
+├── imagens/
+│   └── produto/
+├── index.html
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
